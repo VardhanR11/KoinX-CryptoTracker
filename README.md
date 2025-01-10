@@ -23,6 +23,45 @@ A Node.js and MongoDB based server-side application.
 
 - GET `/`: Welcome message
 
+## Project Structure
+KoinX/
+├── models/
+│   └── CryptoPrice.js     # Database schema
+├── routes/
+│   └── cryptoRoutes.js    # API routes
+├── services/
+│   └── cryptoService.js   # Price fetching service
+├── server.js              # Main application
+├── .env                   # Configuration
+└── package.json          # Dependencies
+
+## Implementation Details
+1. Database Schema:
+```
+{
+    coinId: String,
+    priceUSD: Number,
+    marketCapUSD: Number,
+    priceChange24h: Number,
+    timestamp: Date
+}
+```
+2. Background Service:
+- Uses node-cron for scheduling
+- Runs every 2 hours (0 */2 * * *)
+- Fetches data from CoinGecko API
+- Stores in MongoDB Atlas
+
+3. Testing:
+Test the API using Postman or curl:
+```
+#Get Bitcoin stats
+postman-get "http://localhost:5000/api/stats?coin=bitcoin"
+
+# Get Bitcoin price deviation
+postman-get "http://localhost:5000/api/deviation?coin=bitcoin"
+```
+
 ## Features:
 - Real-time price tracking for Bitcoin, Ethereum, and Matic
 - Price statistics endpoint (/api/stats)
