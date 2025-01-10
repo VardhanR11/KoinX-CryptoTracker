@@ -78,3 +78,16 @@ postman-get "http://localhost:5000/api/deviation?coin=bitcoin"
 - CoinGecko API integration
 - Cron job scheduling
 - dotenv for environment variables
+
+## ScreamShots
+DataBase:
+![image](https://github.com/user-attachments/assets/58df2439-1b38-4729-a6ed-34fa6a68caf3)
+
+CryptoStats Api call:
+![image](https://github.com/user-attachments/assets/3f380327-6470-4b64-ad17-2cc613f4a85c)
+
+Deviation:
+![image](https://github.com/user-attachments/assets/c431a8f2-e060-4c3e-8fa7-df507c4eba27)
+
+
+
