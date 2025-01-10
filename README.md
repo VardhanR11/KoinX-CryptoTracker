@@ -24,6 +24,7 @@ A Node.js and MongoDB based server-side application.
 - GET `/`: Welcome message
 
 ## Project Structure
+```
 KoinX/
 ├── models/
 │   └── CryptoPrice.js     # Database schema
@@ -34,6 +35,7 @@ KoinX/
 ├── server.js              # Main application
 ├── .env                   # Configuration
 └── package.json          # Dependencies
+```
 
 ## Implementation Details
 1. Database Schema:
