@@ -23,10 +23,17 @@ A Node.js and MongoDB based server-side application.
 
 - GET `/`: Welcome message
 
-## Technologies Used
+## Features:
+- Real-time price tracking for Bitcoin, Ethereum, and Matic
+- Price statistics endpoint (/api/stats)
+- Standard deviation calculation endpoint (/api/deviation)
+- Automated price updates every 2 hours
+- MongoDB Atlas integration
+- Error handling and logging
 
-- Node.js
-- Express.js
-- MongoDB with Mongoose
-- CORS for cross-origin requests
+## Technical details:
+- Node.js/Express backend
+- MongoDB Atlas database
+- CoinGecko API integration
+- Cron job scheduling
 - dotenv for environment variables
